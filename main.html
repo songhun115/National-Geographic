@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="main.css">
     <title>내셔널지오그래픽</title>
 </head>
+<script>
+    $('.toggle_btn').click(function() {
+  $('.side_bg').addClass('active');
+});
+
+$('.close_toggle_btn').click(function() {
+  $('.side_bg').removeClass('active');
+})
+
+</script>
 <body>
     <!--<i class="fab fa-youtube"></i>-->
     <!--<i class="fab fa-facebook"></i>-->
@@ -30,10 +40,12 @@
             <li class="nav_bar_item">NEWS</li>
             <li class="nav_bar_item">MAGAZINES</li>
             <li class="nav_bar_item">STORE</li>
-            <li class="nav_bar_item"><i class="fas fa-bars"></i></li>
+            <li class="nav_bar_item toggle_btn"><i class="fas fa-bars"></i></li>
         </ul>
     </nav>
+  <!--nav_bar End-->
 
+    <!--nav_bar_mobile Strart-->
     <nav class="nav_bar_mobile">
         <ul class="nav_bar_mobile_logo">
             <li class="mobile_logo">
@@ -42,23 +54,38 @@
             <li><i class="fas fa-bars"></i></li>
         </ul>
     </nav>
-    <!--nav_bar end-->
+    <!--nav_bar_mobile End-->
 
+    <!-- side_bg Start -->
+    <div class="side_bar">
+        <ul class="side_bg">
+            <li class="side_item close_toggle_btn "><i class="fas fa-arrow-right"></i></li>
+            <li class="side_item">HOME</li>
+            <li class="side_item">BRAND</li>
+            <li class="side_item">CHANNEL</li>
+            <li class="side_item">VIDEO</li>
+            <li class="side_item">NEWS</li>
+            <li class="side_item">MAGAZINES</li>
+            <li class="side_item">STORE</li>
+        </ul>
+    </div>
+    <!-- side_bg End -->
 
-    <!--section slider start-->
+    <!--section slider Start-->
     <section class="sections con">
     <div class="sliders_box con ">
         <ul class="slieders">
-            <li class="slider_item"><img src="http://natgeokorea.com/lib/thumb/phpThumb.php?src=/uploads%2F5ec152b14b6c11821f.png&w=1192&sia=NGCKOREA&q=80" alt=""></li>
-            <li class="slider_item"><img src="http://natgeokorea.com/lib/thumb/phpThumb.php?src=/uploads%2F5d9acc821f7c7726f.jpg&w=1192&sia=NGCKOREA&q=80" alt=""></li>
-            <li class="slider_item"><img src="http://natgeokorea.com/lib/thumb/phpThumb.php?src=/uploads%2F5e7b015b11a772539f.jpg&w=1192&sia=NGCKOREA&q=80" alt=""></li>
-            <li class="slider_item"><img src="http://natgeokorea.com/lib/thumb/phpThumb.php?src=/uploads%2F5d3e59adee26d2957f.jpg&w=1192&sia=NGCKOREA&q=80" alt=""></li>
-            <li class="slider_item"><img src="http://natgeokorea.com/lib/thumb/phpThumb.php?src=/uploads%2F5ddb92f9e8fad2517f.jpg&w=1192&sia=NGCKOREA&q=80" alt=""></li>
+            <li class="slider_item"><img src="imgs/slider1.PNG" alt=""></li>
+            <li class="slider_item"><img src="imgs/slider2.PNG" alt=""></li>
+            <li class="slider_item"><img src="imgs/slider3.PNG" alt=""></li>
+            <li class="slider_item"><img src="imgs/slider4.PNG" alt=""></li>
+            <li class="slider_item"><img src="imgs/slider5.PNG" alt=""></li>
         </ul>
     </div>
 </section>
-
-
+    <!--section slider End-->
+    
+<!--NEWS START -->
     <section class="news con sections">
         <div class="section_text">
             NEWS
@@ -75,17 +102,19 @@
                 <div class="bg_box4 bg_top"></div>
                 <div class="bg_box5 bg_top"></div>
                 <div class="bg_box6 bg_top"></div>
-                <img src="http://natgeokorea.com/lib/thumb/phpThumb.php?src=/uploads/%ED%94%84%EB%A6%AC%EC%86%94%EB%A1%9C%EB%A6%AC%EC%82%AC%EC%9D%B4%EC%A6%88_0.jpg&w=1192&sia=NGCKOREA&q=65" alt="">
+                <img src="imgs/news.PNG" alt="">
             </div>
     </section>
+<!--NEWS END -->
 
+<!--Channel START -->
     <section class="channel con sections">
         <div class="section_text">
             CHANNEL
         </div>   
             <div class="channel_img_box">
-                <img src="http://natgeokorea.com/lib/thumb/phpThumb.php?src=/uploads%2Fmain_9.jpg&w=1192&sia=NGCKOREA&q=65" alt="">
-                <img src="http://natgeokorea.com/lib/thumb/phpThumb.php?src=/uploads%2Fmain_7.jpg&w=1192&sia=NGCKOREA&q=65" alt="">
+                <img src="imgs/slider2.PNG" alt="">
+                <img src="imgs/channel2.PNG" alt="">
             </div>
             <div class="img_box">
                 <div class="text_box">
@@ -99,11 +128,13 @@
                 <div class="bg_box4 bg_top"></div>
                 <div class="bg_box5 bg_top"></div>
                 <div class="bg_box6 bg_top"></div>
-                <img src="http://natgeokorea.com/lib/thumb/phpThumb.php?src=/uploads%2Fmain_0.png&w=1192&sia=NGCKOREA&q=65" alt="">
+                <img src="imgs/channel3.PNG" alt="">
             </div>
             
     </section>
+<!--Channel END -->
 
+<!--Matazines START -->
     <section class="magazines con sections">    
         <div class="section_text">
             MAGAZINES
@@ -120,7 +151,7 @@
                 <div class="bg_box4 bg_top"></div>
                 <div class="bg_box5 bg_top"></div>
                 <div class="bg_box6 bg_top"></div>
-                <img src="http://natgeokorea.com/lib/thumb/phpThumb.php?src=/uploads%2F2019+%E1%84%86%E1%85%A2%E1%84%80%E1%85%A5%E1%84%8C%E1%85%B5%E1%86%AB+10%E1%84%8B%E1%85%AF%E1%86%AF%E1%84%92%E1%85%A9.jpg&w=1192&sia=NGCKOREA&q=65" alt="">
+                <img src="imgs/magazines.PNG" alt="">
             </div>
             <div class="img_box">
                 <div class="text_box">
@@ -136,10 +167,12 @@
                 <div class="bg_box4 bg_top"></div>
                 <div class="bg_box5 bg_top"></div>
                 <div class="bg_box6 bg_top"></div>
-                <img src="http://natgeokorea.com/lib/thumb/phpThumb.php?src=/uploads%2F02_banner_Traveler_201912.jpg&w=1192&sia=NGCKOREA&q=65" alt="">
+                <img src="imgs/magazines2.PNG" alt="">
             </div>
     </section>
+<!--Matazines End -->
 
+<!--Store START -->
     <section class="store con sections">
         <div class="section_text">
             STORE
@@ -156,15 +189,44 @@
                 <div class="bg_box4 bg_top"></div>
                 <div class="bg_box5 bg_top"></div>
                 <div class="bg_box6 bg_top"></div>
-                <img src="http://natgeokorea.com/lib/thumb/phpThumb.php?src=/uploads%2F%ED%95%98%EB%8B%A8+%EB%B8%8C%EB%9E%9C%EB%93%9C+%EC%9D%B4%EB%AF%B8%EC%A7%80.jpg&w=1192&sia=NGCKOREA&q=65" alt="">
+                <img src="imgs/store.PNG" alt="">
             </div>
     </section>
+<!--Store END -->
 
-    <section class="footer">    
+    <section class="footer">
+        <div class="footer_box con">
+            <ul class="footer_list">
+                <li class="footer_item">BRAND</li>
+                <li class="footer_item">NEWS</li>
+                <li class="footer_item">CHANNEL</li>
+                <li class="footer_item">MAGAZINES</li>
+                <li class="footer_item">STORE</li>
+                <li class="footer_item">VIDEO</li>
+            </ul>
+
+            <ul class="contactus">
+                <li class="contact">
+                    <sapn>의류<br>00.1111.2222</sapn>
+                </li>
+                <li class="contact">
+                    <sapn>매거진<br>00.1111.2222</sapn>
+                </li>
+                <li class="contact">
+                    
+                    <sapn>트러블 매거진<br>00.1111.2222</sapn>
+                    
+                </li>
+                <li class="contact">
+                    <sapn>방송<br>00.1111.2222</sapn>
+                    
+                </li>
+                <li class="contact">
+                    <sapn>모바일 악세서리<br>00.1111.2222</sapn>
+                </li>
+            </ul> 
+        </div>
     </section>
-
-
-
 
     <!--section slider end  -->
 </body>
