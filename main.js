@@ -1,12 +1,26 @@
-/* menu_btn click to show and hide menu_bg */
-$('.toggle_btn').click(function() {l
-  $('.side_bg').addClass('active');
+/* pc menu_btn click to show and hide menu_bg */
+$(function(){
+  $('.toggle_btn').click(function() {
+    $('.side_bg').addClass('active');
+
+  });
+  
+  $('.close_toggle_btn').click(function() {
+    $('.side_bg').removeClass('active');
+  })
+
+  
+/* mobile menu_btn click to show and hide menu_bg */
+$('.mobile_toggle_btn').click(function() {
+  $('.mobile_side_bg').addClass('active');
+
 });
 
-$('.close_toggle_btn').click(function() {
-  $('.side_bg').removeClass('active');
-})
- 
+$('.mobile_close_toggle_btn').click(function() {
+  $('.mobile_side_bg').removeClass('active');
+});
+
+});
 
 /*scroll down shrink */
 $(function(){

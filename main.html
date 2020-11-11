@@ -9,18 +9,10 @@
     <script src="main.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css">
     <title>내셔널지오그래픽</title>
 </head>
-<script>
-    $('.toggle_btn').click(function() {
-  $('.side_bg').addClass('active');
-});
 
-$('.close_toggle_btn').click(function() {
-  $('.side_bg').removeClass('active');
-})
-
-</script>
 <body>
     <!--<i class="fab fa-youtube"></i>-->
     <!--<i class="fab fa-facebook"></i>-->
@@ -42,18 +34,12 @@ $('.close_toggle_btn').click(function() {
             <li class="nav_bar_item">STORE</li>
             <li class="nav_bar_item toggle_btn"><i class="fas fa-bars"></i></li>
         </ul>
+        
     </nav>
   <!--nav_bar End-->
 
     <!--nav_bar_mobile Strart-->
-    <nav class="nav_bar_mobile">
-        <ul class="nav_bar_mobile_logo">
-            <li class="mobile_logo">
-                <img src="http://natgeokorea.com/img/toplogo.png" alt="">
-            </li>
-            <li><i class="fas fa-bars"></i></li>
-        </ul>
-    </nav>
+   
     <!--nav_bar_mobile End-->
 
     <!-- side_bg Start -->
@@ -68,7 +54,30 @@ $('.close_toggle_btn').click(function() {
             <li class="side_item">MAGAZINES</li>
             <li class="side_item">STORE</li>
         </ul>
+        <div class="body_bg"></div>
     </div>
+
+    <div class="mobile_side_bar">
+        <ul class="mobile_side_bg">
+            <li class="mobile_side_item mobile_close_toggle_btn "><i class="fas fa-arrow-right"></i></li>
+            <li class="mobile_side_item">HOME</li>
+            <li class="mobile_side_item">BRAND</li>
+            <li class="mobile_side_item">CHANNEL</li>
+            <li class="mobile_side_item">VIDEO</li>
+            <li class="mobile_side_item">NEWS</li>
+            <li class="mobile_side_item">MAGAZINES</li>
+            <li class="mobile_side_item">STORE</li>
+        </ul>
+        
+    </div>
+    <nav class="nav_bar_mobile">
+        <ul class="nav_bar_mobile_logo">
+            <li class="mobile_logo">
+                <img src="http://natgeokorea.com/img/toplogo.png" alt="">
+            </li>
+            <li><i class="mobile_toggle_btn fas fa-bars"></i></li>
+        </ul>
+    </nav>
     <!-- side_bg End -->
 
     <!--section slider Start-->
@@ -195,17 +204,21 @@ $('.close_toggle_btn').click(function() {
 <!--Store END -->
 
     <section class="footer">
-        <div class="footer_box con">
-            <ul class="footer_list">
-                <li class="footer_item">BRAND</li>
-                <li class="footer_item">NEWS</li>
-                <li class="footer_item">CHANNEL</li>
-                <li class="footer_item">MAGAZINES</li>
-                <li class="footer_item">STORE</li>
-                <li class="footer_item">VIDEO</li>
+        <div class="footer_menu con">
+            <ul class="footer_menu_list">
+                <li class="footer_menu_item">BRAND</li>
+                <li class="footer_menu_item">NEWS</li>
+                <li class="footer_menu_item">CHANNEL</li>
+                <li class="footer_menu_item">MAGAZINES</li>
+                <li class="footer_menu_item">STORE</li>
+                <li class="footer_menu_item">VIDEO</li>
             </ul>
 
+            <ul class="contactus_main">
+                <li> contactus</li>
+            </ul>
             <ul class="contactus">
+                
                 <li class="contact">
                     <sapn>의류<br>00.1111.2222</sapn>
                 </li>
