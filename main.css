@@ -360,14 +360,12 @@ body {
 .contactus > .contact {
   font-size: 11px;
 }
-.contactus > div > .main_contact {
-  
-  
-}
+
 .contactus {
 display: flex;
 }
 /* footer End*/
+
 .body_bg {
   position: fixed;
   width: 100%;

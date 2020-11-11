@@ -2,7 +2,6 @@
 $(function(){
   $('.toggle_btn').click(function() {
     $('.side_bg').addClass('active');
-
   });
   
   $('.close_toggle_btn').click(function() {
@@ -13,7 +12,6 @@ $(function(){
 /* mobile menu_btn click to show and hide menu_bg */
 $('.mobile_toggle_btn').click(function() {
   $('.mobile_side_bg').addClass('active');
-
 });
 
 $('.mobile_close_toggle_btn').click(function() {
