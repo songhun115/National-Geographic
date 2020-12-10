@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="https://swiperjs.com/package/swiper-bundle.min.css">
+    <script src="https://swiperjs.com/package/swiper-bundle.min.js"></script>
+
+
     <script src="https://kit.fontawesome.com/3d50e7f878.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -88,43 +94,42 @@
     
     
     <!--section slider Start-->
-    <section class="sections con">
-        <div class="sliders_box con ">
-            <ul class="sliders">
-                <li class="slider_item active">
-                    <div class="img_box">
-                        <div class="text_box">
-                            <div class="text_box_cj">NEWS</div>
-                            <h1>커피콩 너머의 이야기</h1>
-                            <h4>내셔널지오그래픽이 네스프레소와 함께 세계 최고의 커피 재배지 방문</h4>
-                        </div>
-                        <div class="bg_box1 bg_bottom"></div>
-                        <div class="bg_box2 bg_bottom"></div>
-                        <div class="bg_box3 bg_bottom"></div>
-                        <div class="bg_box4 bg_top"></div>
-                        <div class="bg_box5 bg_top"></div>
-                        <div class="bg_box6 bg_top"></div>
-                        <img src="imgs/slider1.PNG" alt="">
+    <section class="slider_section sections con">
+       <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="img_box">
+                    <div class="text_box">
+                        <div class="text_box_cj">NEWS</div>
+                        <h1>커피콩 너머의 이야기</h1>
+                        <h4>내셔널지오그래픽이 네스프레소와 함께 세계 최고의 커피 재배지 방문</h4>
                     </div>
-                </li>
-            
-                <li class="slider_item">
-                    <div class="img_box">
-                        <div class="text_box">
-                            <div class="text_box_cj">NEWS</div>
-                            <h1>늑대의 왕국</h1>
-                            <h4>인간의 발이 닳지 않는곳 "북극정원의 늑대"</h4>
-                        </div>
                     <div class="bg_box1 bg_bottom"></div>
                     <div class="bg_box2 bg_bottom"></div>
                     <div class="bg_box3 bg_bottom"></div>
                     <div class="bg_box4 bg_top"></div>
                     <div class="bg_box5 bg_top"></div>
                     <div class="bg_box6 bg_top"></div>
-                    <img src="imgs/slider2.PNG" alt="">
+                    <img src="imgs/slider1.PNG" alt="">
                 </div>
-            </li>
-            <li class="slider_item">
+            </div>
+            <div class="swiper-slide">
+                <div class="img_box">
+                    <div class="text_box">
+                        <div class="text_box_cj">NEWS</div>
+                        <h1>늑대의 왕국</h1>
+                        <h4>인간의 발이 닳지 않는곳 "북극정원의 늑대"</h4>
+                    </div>
+                <div class="bg_box1 bg_bottom"></div>
+                <div class="bg_box2 bg_bottom"></div>
+                <div class="bg_box3 bg_bottom"></div>
+                <div class="bg_box4 bg_top"></div>
+                <div class="bg_box5 bg_top"></div>
+                <div class="bg_box6 bg_top"></div>
+                <img src="imgs/slider2.PNG" alt="">
+            </div>
+            </div>
+            <div class="swiper-slide">
                 <div class="img_box">
                     <div class="text_box">
                         <div class="text_box_cj">NEWS</div>
@@ -139,8 +144,8 @@
                     <div class="bg_box6 bg_top"></div>
                     <img src="imgs/slider3.PNG" alt="">
                 </div>
-            </li>
-            <li class="slider_item">
+            </div>
+            <div class="swiper-slide">
                 <div class="img_box">
                     <div class="text_box">
                         <div class="text_box_cj">NEWS</div>
@@ -155,32 +160,12 @@
                     <div class="bg_box6 bg_top"></div>
                     <img src="imgs/slider4.PNG" alt="">
                 </div>
-            </li>
-            <li class="slider_item">
-                <div class="img_box">
-                    <div class="text_box">
-                        <div class="text_box_cj">NEWS</div>
-                        <h1>내셔널 지오그래픽 트래블러 매거진</h1>
-                        <h4>전지적 야생동물 시점</h4>
-                    </div>
-                    <div class="bg_box1 bg_bottom"></div>
-                    <div class="bg_box2 bg_bottom"></div>
-                    <div class="bg_box3 bg_bottom"></div>
-                    <div class="bg_box4 bg_top"></div>
-                    <div class="bg_box5 bg_top"></div>
-                    <div class="bg_box6 bg_top"></div>
-                    <img src="imgs/slider5.PNG" alt="">
-                </div>
-            </li> 
-        </ul>
-               <div class="side_btns">
-                <div class="lift_btn">
-                    <i class=" fas fa-chevron-left"></i>
-                </div>
-                <div class="right_btn">
-                    <i class="right_btn fas fa-chevron-right"></i>
-                </div>
-            </div>
+            </div>     
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>   
         
     </div>
 </section>
@@ -332,7 +317,22 @@
             </ul> 
         </div>
     </section>
-
+  
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          cssMode: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
     <!--section slider end  -->
 </body>
 </html>
